@@ -4,7 +4,8 @@ class App extends React.Component {
   public render () {
     return (
       <div>
-        welcome to react-ts
+        <p className="head">welcome to react-ts</p>
+        <p className="hint">edit <code>src/App.tsx</code> and save to reload.</p>
       </div>
     )
   }
