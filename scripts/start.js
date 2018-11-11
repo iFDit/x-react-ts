@@ -16,7 +16,7 @@ const WebpackDevServer = require('webpack-dev-server')
 const config = require('../config/webpack.config.dev')
 const createDevServerConfig = require('../config/webpackDevServer.config')
 
-const HOST = process.env.HOST || '0.0.0.0'
+const HOST = process.env.HOST || 'localhost'
 const port = process.env.PORT || 4001
 let firstCompiler = true
 
@@ -42,7 +42,7 @@ compiler.plugin('done', stats => {
   }
 
   console.log(
-    `  ${chalk.bold('Local:')}            http://localhost:${port}`
+    `  ${chalk.bold('Local:')}            http://${HOST}:${port}`
   )
 
   if (messages.errors.length) {

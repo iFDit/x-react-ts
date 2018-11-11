@@ -73,6 +73,7 @@ const babelLoader = {
     babelrc: false,
     // use recommand presets for react
     presets: [require.resolve('@babel/preset-react')],
+    plugins: ['babel-plugin-x-import'],
     cacheDirectory: true,
     cacheCompression: false,
   }
@@ -131,7 +132,7 @@ module.exports = [
   // when you import an assets, you get its (virtual) filename
   // add new loader before file-loader!
   {
-    exclude: [/\.(js|jsx)$/, /\.html$/, /\.json$/],
+    exclude: [/\.(js|jsx|ts|tsx)$/, /\.(ts|tsx)$/, /\.html$/, /\.json$/],
     loader: require.resolve('file-loader'),
     options: {
       name: 'static/media/[name].[hash:8].[ext]',
