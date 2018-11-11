@@ -1,7 +1,10 @@
-### Simple React creater.
+# x-react-ts
+
+Simple React creater.
   - typescript
   - simple dependencies
   - out of the box
+
 
 `````shell
   # install
