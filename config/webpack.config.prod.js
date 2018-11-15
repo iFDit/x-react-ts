@@ -13,7 +13,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
 
-const publicPath = '/'
+const publicPath = process.env.PUBLIC_PATH || '/'
 
 // production configuration.
 // compiles slowly and is focused on producing a fast and minimal bundle.
