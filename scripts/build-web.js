@@ -17,8 +17,9 @@ function build() {
   const compiler = webpack(config)
   compiler.run((error, stats) => {
     if (error) {
-      return err
+      return error
     }
+    const stack = error != null && error.stack
     const messages = formatWebpackMessages(stats.toJson({}, true))
     messages.errors = messages.errors.slice(0, 1)
     if (messages.errors.length > 0) {
