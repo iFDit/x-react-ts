@@ -2,7 +2,6 @@
 
 const paths = require('./paths')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const autoprefixer = require('autoprefixer')
 
 const isProduction = process.env.NODE_ENV === 'production'
 const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false'
