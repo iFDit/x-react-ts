@@ -74,7 +74,7 @@ compiler.plugin('done', stats => {
     )
   }
   if (firstCompiler) {
-    openBrowser(`http://localhost:${port}`)
+    openBrowser(`http://${HOST}:${port}`)
     firstCompiler = false
   }
 })
