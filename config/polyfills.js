@@ -1,7 +1,7 @@
 'use strict'
 
 if (!Promise) {
-  window.promise = require('promise/lib/es6-extensions.js')
+  window.Promise = require('promise/lib/es6-extensions.js')
 }
 
 require('whatwg-fetch')
